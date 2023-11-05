@@ -3,10 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" /> 
+    
     <title>Weather</title>
   </head>
   <body>
-    <h1>hi</h1>
-    <footer>This page was coded by Anu Govender</footer>
+  <div class="container">
+      <div class="weather-app-wrapper" id="weather-app-wrapper">
+        <div class="weather-app" id="weather-app" style="background-color: rgba(106, 205, 241, 0.8);">
+          <form id="seacrh-form" class="mb-3">
+            <div class="row">
+              <div class="col-10">
+                <input type="search" placeholder="Enter city..." class="form-control" id="city-input" autocomplete="off" autofocus="">
+              </div>
+              <div class="col-2">
+                <input type="submit" value="Search" class="btn btn-primary">
+              </div>
+            </div>
+          </form>
+          <h1 id="city">Durban</h1>
+          <div class="row">
+            <div class="col-5">
+              <div class="d-flex temperature-display">
+                <img src="./WEATHER-APP-1_files/clear-sky-day.png" alt="clear sky" id="icon">
+                <strong id="temperature">31</strong><span class="units">           
+                                
+                    <a href="https://main--poetic-daifuku-c608f7.netlify.app/#" id="celsius-link" class="active">°C</a> |
+                  
+                    <a href="https://main--poetic-daifuku-c608f7.netlify.app/#" id="fahrenheit-link">°F</a>
+                  </span>
+
+              </div>
+            </div>
+            <div class="col-3" id="col-position">
+              <ul class="weather-additions">
+                <li>Humidity: <span id="humidity">16</span>%</li>
+                <li>Wind: <span id="wind">11</span>km/h</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <ul>
+                <div class="weather"><li>Weather</li></div>
+                <div id="day-and-time">Tuesday, 16:32</div>
+                <div class="day-description" id="description">clear sky</div>
+              </ul>
+            </div>
+            <div class="weather-forecast" id="forecast"><div class="row"><div class="col-2">
+          <div class="weather-forecast-day">Tue</div>
+          <img src="./WEATHER-APP-1_files/clear-sky-day.png" alt="clear-sky-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">31°</span>
+            <span class="forecast-min">18°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-day">Wed</div>
+          <img src="./WEATHER-APP-1_files/clear-sky-day.png" alt="clear-sky-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">31°</span>
+            <span class="forecast-min">16°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-day">Thu</div>
+          <img src="./WEATHER-APP-1_files/clear-sky-day.png" alt="clear-sky-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">31°</span>
+            <span class="forecast-min">16°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-day">Fri</div>
+          <img src="./WEATHER-APP-1_files/rain-day.png" alt="rain-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">33°</span>
+            <span class="forecast-min">20°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-day">Sat</div>
+          <img src="./WEATHER-APP-1_files/rain-day.png" alt="rain-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">30°</span>
+            <span class="forecast-min">17°</span>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="weather-forecast-day">Sun</div>
+          <img src="./WEATHER-APP-1_files/rain-day.png" alt="rain-day" width="36px" class="icon-weather-forecast">
+          <div class="weather-forecast-temp">
+            <span class="forecast-max">16°</span>
+            <span class="forecast-min">13°</span>
+          </div>
+        </div>
+        </div></div>
+          </div>
+        </div>   
+       <footer>
+        This project was coded by
+        <a href="https://github.com/1543-STACK/" target="_blank"> Anu Govender</a>,
+        is
+        <a href="https://github.com/1543-STACK/weather-stats" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href=https://subtle-moonbeam-da3a99.netlify.app/" target="_blank"
+          >hosted on Netlify</a>
+      </footer>
+    
   </body>
 </html>
