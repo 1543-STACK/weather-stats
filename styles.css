@@ -1,0 +1,131 @@
+body {
+  font-family: arial, sans-serif;
+  background: #79a8f5;
+}
+
+h1 {
+  color: #e8f3f8;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 7px solid #dadde1;
+  border-radius: px;
+}
+
+.temperature-display img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.temperature-display strong {
+  display: inline-block;
+  color: #eaeef8;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.temperature-display .units {
+  color: #f5fafd;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: arial, sans-serif;
+  font-weight: normal;
+  margin-top: 6px;
+  padding-left: 6px;
+  vertical-align: top;
+}
+
+.weather-additions {
+  color: #e4edf7;
+  display: inline-block;
+  font-size: 12px;
+  font-family: arial, sans-serif;
+  line-height: 16px;
+  padding-left: 9px;
+  padding-top: 6px;
+}
+
+.weather {
+  color: #f4f9fd;
+  font-size: 22px;
+  font-family: Google Sans, arial, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+}
+
+#day-and-time {
+  color: #edf7fd;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  line-height: 20px;
+  text-align: right;
+}
+
+.day-description {
+  color: #eef3f7;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  line-height: 20px;
+  text-align: right;
+}
+
+.day-description::first-letter {
+  text-transform: capitalize;
+}
+
+#fahr {
+  text-decoration: none;
+}
+
+#celsius {
+  text-decoration: none;
+}
+
+#col-position {
+  position: relative;
+  left: -55px;
+}
+
+.units .active {
+  color: #202124;
+  cursor: default;
+}
+
+.units .active :hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #dadde1;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
